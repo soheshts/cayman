@@ -111,7 +111,7 @@ a {
   background-color: $header-bg-color;
   background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
   background-size: 400% 400%;
-  
+  position: fixed;
   display: flex;
   animation: animate 7.5s ease-in-out infinite;
   @include large {
