@@ -17,7 +17,7 @@
 
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.date | default: page.description | default: site.github.project_tagline }}</h2>
+      <h2 class="project-tagline">{{ page.date| date: '%B %d, %Y' | default: page.description | default: site.github.project_tagline }}</h2>
       <a href="{{ "/" | absolute_url }}" class="btn">Home</a>
       <a href="{{ site.github.owner_url }}" class="btn">About</a>
       
